@@ -419,7 +419,7 @@ body.hero-on .hero-title{opacity:1;transform:none}
 /* врачи */
 .doc-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));
   gap:clamp(14px,2vw,24px);margin-top:clamp(30px,5vh,50px)}
-@media (min-width:1100px){.doc-grid{grid-template-columns:repeat(5,1fr)}}
+@media (min-width:1100px){.doc-grid{grid-template-columns:repeat(4,1fr)}}
 @media (max-width:840px){.doc img{aspect-ratio:1/1}}
 .doc{border-radius:20px;overflow:hidden;background:var(--cream);border:1px solid rgba(164,141,120,.14)}
 .doc img{width:100%;height:auto;aspect-ratio:3/3.4;object-fit:cover;object-position:top center;display:block}   /* height:auto — иначе атрибут height=1600 побеждает aspect-ratio в статике */
@@ -1455,25 +1455,11 @@ body:not(.flight-on) .fl-h1{display:none}   /* на мобильных h1 жив
       </div>
     </article>
     <article class="doc">
-      <img width="1200" height="1600" decoding="async" src="assets/img/doctors/abakarov-v2.jpg" alt="Абакаров Осман Абакарович — стоматолог-хирург-ортопед" loading="lazy">
-      <div class="doc-info"><h3>Абакаров Осман Абакарович</h3><p>Стоматолог-хирург, ортопед</p><span>стаж 12 лет</span></div>
-      <div class="doc-certs">
-        <button class="doc-certs-btn" type="button" aria-expanded="false" aria-controls="certs-3">Дипломы и курсы · 5</button>
-        <ul class="doc-certs-list" id="certs-3" hidden>
-          <li><a href="assets/img/certs/osman-caspian.jpg"><img width="560" height="371" decoding="async" src="assets/img/certs/t/osman-caspian.jpg" alt="" loading="lazy"><b>Implantology Congress Caspian 2025</b><span>Участник конгресса по имплантологии · 2025</span></a></li>
-          <li><a href="assets/img/certs/osman-bego.jpg"><img width="560" height="396" decoding="async" src="assets/img/certs/t/osman-bego.jpg" alt="" loading="lazy"><b>Тотальная реабилитация. Концепция All-on-4</b><span>Bego Academy · Тарас Юров · Махачкала, 2025</span></a></li>
-          <li><a href="assets/img/certs/osman-expert.jpg"><img width="403" height="560" decoding="async" src="assets/img/certs/t/osman-expert.jpg" alt="" loading="lazy"><b>Устранение рецессий десны</b><span>Expert Club · Саид Алиев · Махачкала, май 2026</span></a></li>
-          <li><a href="assets/img/certs/osman-novichenko.jpg"><img width="438" height="560" decoding="async" src="assets/img/certs/t/osman-novichenko.jpg" alt="" loading="lazy"><b>Физиологическая окклюзия, модуль 1</b><span>Концепция Новиченко · Роман Новиченко · Анапа, май 2023</span></a></li>
-          <li><a href="assets/img/certs/osman-my32.jpg"><img width="560" height="372" decoding="async" src="assets/img/certs/t/osman-my32.jpg" alt="" loading="lazy"><b>Мастерство протезирования</b><span>«Мастерская Улыбок» · ноябрь 2018</span></a></li>
-        </ul>
-      </div>
-    </article>
-    <article class="doc">
       <img width="1200" height="1600" decoding="async" src="assets/img/doctors/magomedov-v2.jpg" alt="Магомедов Расул Абдуллаевич — стоматолог-терапевт" loading="lazy">
       <div class="doc-info"><h3>Магомедов Расул Абдуллаевич</h3><p>Заведующий терапевтическим отделением · стоматолог-терапевт</p><span>стаж 10 лет</span></div>
       <div class="doc-certs">
-        <button class="doc-certs-btn" type="button" aria-expanded="false" aria-controls="certs-4">Дипломы и курсы · 1</button>
-        <ul class="doc-certs-list" id="certs-4" hidden>
+        <button class="doc-certs-btn" type="button" aria-expanded="false" aria-controls="certs-3">Дипломы и курсы · 1</button>
+        <ul class="doc-certs-list" id="certs-3" hidden>
           <li><a href="assets/img/certs/rasul-endview.webp" data-award><img width="560" height="452" decoding="async" src="assets/img/certs/t/rasul-endview.webp" alt="" loading="lazy"><b>Повторное эндодонтическое лечение и эргономика</b><span>END VIEW · к.м.н. И. Н. Вьючнов · декабрь 2022</span></a></li>
         </ul>
       </div>
@@ -2152,7 +2138,7 @@ body:not(.flight-on) .fl-h1{display:none}   /* на мобильных h1 жив
           [[280, 260, 340], [1420, 330, 330], [820, 90, 300]], /* 2023 — стены и свет */
           [[1010, 220, 420]] ] },                              /* 2026 — потолок-аквариум, затем всё */
       /* врачи: фотокарточки въезжают справа поверх финала истории и «открываются» по свайпу */
-      doctors:{ cards:true, steps:5, photo:'assets/img/reception-1.jpg', photoMob:'assets/gen/reception-m.jpg', exit:'slide' },   /* один свайп = один врач: въезжает и сразу открывается */
+      doctors:{ cards:true, steps:4, photo:'assets/img/reception-1.jpg', photoMob:'assets/gen/reception-m.jpg', exit:'slide' },   /* один свайп = один врач: въезжает и сразу открывается */
       /* документы: стена галереи — рамки с сертификатами, камера идёт вдоль стены; клик по рамке — крупно */
       certs:{ wall:true, steps:3, stepsMob:4, photo:'assets/gen/wall.jpg', exit:'cover' },   /* портрет: развеска 2×2 — остановка на каждую рамку, затем общий план */
       /* контакты: «возвращаемся к входу» — настоящий фасад (день → сумерки), контакты на здании,
